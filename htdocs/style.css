@@ -1,0 +1,316 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    direction: rtl;
+}
+
+header {
+    background-color: #f0ad4e;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.dashboard-actions .button {
+    background-color: #f0ad4e;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.dashboard-actions .button:hover {
+    background-color: #ec971f;
+}
+
+.dashboard-actions .danger {
+    background-color: #d9534f;
+}
+
+.dashboard-actions .danger:hover {
+    background-color: #c9302c;
+}
+
+/* تنسيق شريط التنقل */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    background-color: #f8f9fa; /* لون خلفية شريط التنقل */
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f0ad4e;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #d68c2f;
+}
+
+/* تنسيق لزر تسجيل الدخول وتسجيل الخروج */
+nav ul li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #f0ad4e;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button,
+.button {
+    background-color: #f0ad4e;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+form button:hover,
+.button:hover {
+    background-color: #ec971f;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table th {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.search-sort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .search-sort {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    form .form-group > div {
+        flex: 1 1 48%;
+        margin-bottom: 10px;
+    }
+}
+
+/* تنسيق عبارة "إدارة الأجهزة الطبية" */
+.header-title {
+    color: #f0ad4e;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* تنسيق الأزرار في صفحة index */
+.btn {
+    background-color: #f0ad4e;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d68c2f;
+}
+
+.btn-edit {
+    background-color: #5bc0de;
+}
+
+.btn-edit:hover {
+    background-color: #31b0d5;
+}
+
+/* تحسين التنسيق للصفحة الرئيسية مع أدوات البحث والفرز */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.controls .btn {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.controls .btn:hover {
+    background-color: #d68c2f;
+}
+
+.search-form input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+}
+
+.sort-form select {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.sort-form button {
+    padding: 10px 20px;
+}
+
+/* تنسيق الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+table td a {
+    text-decoration: none;
+    color: white;
+    background-color: #5bc0de;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+table td a:hover {
+    background-color: #31b0d5;
+}
+
+table td a.btn-edit {
+    background-color: #5bc0de;
+}
+
+table td a.btn-edit:hover {
+    background-color: #31b0d5;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #f0ad4e;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0ad4e;
+    padding-bottom: 10px;
+}
